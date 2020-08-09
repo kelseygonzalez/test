@@ -1,45 +1,27 @@
----
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
-author_notes:
-- Equal contribution
-- Equal contribution
-authors:
+--- 
+abstract: "Research finds willingness to identify on panethnic terms is increasing among people of Latin American descent in the United States, as is the assertion of Latino-Hispanic panethnicity as a primary identity. The 2013 National Survey of Latinos found that one-fifth of respondents identified most often as “Hispanic/Latino” rather than with a “Hispanic origin term” or as “American”. Drawing on these data, we examine the sociodemographic factors associated with primary panethnic identification (PPI). We find that Democratic Party affiliation and Mexican heritage increase the overall likelihood of PPI. Having less than a high school education, identifying racially as “Hispanic/Latino” or “other race”, Spanish fluency, being a first-generation immigrant, and non-citizenship increase the likelihood of PPI over “American”. These results suggest Latino-Hispanic panethnicity may represent a reactive identity associated with politicization, marginalization, and racialization. Many Latino-Hispanics in the United States are opting for a racialized primary panethnic identity over an “American” identity."
+authors: 
+- Daniel E. Martínez
 - admin
-- Robert Ford
-date: "2015-09-01T00:00:00Z"
-doi: ""
+date: "2020-04-18T00:00:00Z"
+doi: 10.1080/01419870.2020.1752392
 featured: false
-image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
+image: 
   focal_point: ""
   preview_only: false
 projects: []
-publication: '*Journal of Source Themes, 1*(1)'
-publication_short: ""
-publication_types:
-- "2"
-publishDate: "2017-01-01T00:00:00Z"
-slides: example
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
-tags:
-- Source Themes
-title: An example journal article
-url_code: ""
-url_dataset: ""
-url_pdf: http://arxiv.org/pdf/1512.04133v1
+publication: "*Ethnic and Racial Studies, 0*(0)"
+publication_short: "Panethnicity as a reactive identity: primary panethnic identification among Latino-Hispanics in the United States"
+publication_types: 
+  - "2"
+publishDate: "2020-04-18T00:00:00Z"
+title: "Panethnicity as a reactive identity: primary panethnic identification among Latino-Hispanics in the United States"
+url_code: "https://github.com/kelseygonzalez/Latino-Panethnicity"
+url_dataset: "https://www.pewresearch.org/hispanic/dataset/2013-national-survey-of-latinos/"
+url_pdf: "/files/primarypanethnicity.pdf"
 url_poster: ""
 url_project: ""
 url_slides: ""
 url_source: ""
 url_video: ""
 ---
-
-{{% alert note %}}
-Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-{{% /alert %}}
-
-{{% alert note %}}
-Click the *Slides* button above to demo Academic's Markdown slides feature.
-{{% /alert %}}
-
-Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).

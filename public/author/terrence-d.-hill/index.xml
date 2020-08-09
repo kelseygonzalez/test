@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terrence D. Hill | Kelsey E. Gonzalez</title>
+    <link>/author/terrence-d.-hill/</link>
+      <atom:link href="/author/terrence-d.-hill/index.xml" rel="self" type="application/rss+xml" />
+    <description>Terrence D. Hill</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 04 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/kelseygonzalez2020.png</url>
+      <title>Terrence D. Hill</title>
+      <link>/author/terrence-d.-hill/</link>
+    </image>
+    
+    <item>
+      <title>The Blood of Christ Compels Them: State Religiosity and State Population Mobility During the Coronavirus (COVID-19) Pandemic</title>
+      <link>/publication/religiositycoronavirus/</link>
+      <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/religiositycoronavirus/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

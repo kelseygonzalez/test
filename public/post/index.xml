@@ -5,511 +5,808 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 12 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 10 Jun 2020 09:13:14 -0500</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>/media/kelseygonzalez2020.png</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
     
     <item>
-      <title>Writing technical content in Academic</title>
-      <link>/post/writing-technical-content/</link>
-      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>/post/writing-technical-content/</guid>
-      <description>&lt;p&gt;Academic is designed to give technical content creators a seamless experience. You can focus on the content and Academic handles the rest.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Academic.&lt;/p&gt;
-&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
-&lt;h3 id=&#34;code&#34;&gt;Code&lt;/h3&gt;
-&lt;p&gt;Academic supports a Markdown extension for highlighting code syntax. You can enable this feature by toggling the &lt;code&gt;highlight&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```python
-import pandas as pd
-data = pd.read_csv(&amp;quot;data.csv&amp;quot;)
-data.head()
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import pandas as pd
-data = pd.read_csv(&amp;quot;data.csv&amp;quot;)
-data.head()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;math&#34;&gt;Math&lt;/h3&gt;
-&lt;p&gt;Academic supports a Markdown extension for $\LaTeX$ math. You can enable this feature by toggling the &lt;code&gt;math&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file.&lt;/p&gt;
-&lt;p&gt;To render &lt;em&gt;inline&lt;/em&gt; or &lt;em&gt;block&lt;/em&gt; math, wrap your LaTeX math with &lt;code&gt;$...$&lt;/code&gt; or &lt;code&gt;$$...$$&lt;/code&gt;, respectively.&lt;/p&gt;
-&lt;p&gt;Example &lt;strong&gt;math block&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;$$\gamma_{n} = \frac{ 
-\left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T 
-\left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}
-{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;p&gt;$$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left |\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right |^2}$$&lt;/p&gt;
-&lt;p&gt;Example &lt;strong&gt;inline math&lt;/strong&gt; &lt;code&gt;$\nabla F(\mathbf{x}_{n})$&lt;/code&gt; renders as $\nabla F(\mathbf{x}_{n})$.&lt;/p&gt;
-&lt;p&gt;Example &lt;strong&gt;multi-line math&lt;/strong&gt; using the &lt;code&gt;\\\\&lt;/code&gt; math linebreak:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;$$f(k;p_0^*) = \begin{cases} p_0^* &amp;amp; \text{if }k=1, \\\\
-1-p_0^* &amp;amp; \text {if }k=0.\end{cases}$$
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;p&gt;$$f(k;p_0^*) = \begin{cases} p_0^* &amp;amp; \text{if }k=1, \\&lt;br&gt;
-1-p_0^* &amp;amp; \text {if }k=0.\end{cases}$$&lt;/p&gt;
-&lt;h3 id=&#34;diagrams&#34;&gt;Diagrams&lt;/h3&gt;
-&lt;p&gt;Academic supports a Markdown extension for diagrams. You can enable this feature by toggling the &lt;code&gt;diagram&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file or by adding &lt;code&gt;diagram: true&lt;/code&gt; to your page front matter.&lt;/p&gt;
-&lt;p&gt;An example &lt;strong&gt;flowchart&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
-graph TD
-A[Hard] --&amp;gt;|Text| B(Round)
-B --&amp;gt; C{Decision}
-C --&amp;gt;|One| D[Result 1]
-C --&amp;gt;|Two| E[Result 2]
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;graph TD
-A[Hard] --&amp;gt;|Text| B(Round)
-B --&amp;gt; C{Decision}
-C --&amp;gt;|One| D[Result 1]
-C --&amp;gt;|Two| E[Result 2]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;An example &lt;strong&gt;sequence diagram&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
-sequenceDiagram
-Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
-loop Healthcheck
-    John-&amp;gt;&amp;gt;John: Fight against hypochondria
-end
-Note right of John: Rational thoughts!
-John--&amp;gt;&amp;gt;Alice: Great!
-John-&amp;gt;&amp;gt;Bob: How about you?
-Bob--&amp;gt;&amp;gt;John: Jolly good!
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;sequenceDiagram
-Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
-loop Healthcheck
-    John-&amp;gt;&amp;gt;John: Fight against hypochondria
-end
-Note right of John: Rational thoughts!
-John--&amp;gt;&amp;gt;Alice: Great!
-John-&amp;gt;&amp;gt;Bob: How about you?
-Bob--&amp;gt;&amp;gt;John: Jolly good!
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;An example &lt;strong&gt;Gantt diagram&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
-gantt
-section Section
-Completed :done,    des1, 2014-01-06,2014-01-08
-Active        :active,  des2, 2014-01-07, 3d
-Parallel 1   :         des3, after des1, 1d
-Parallel 2   :         des4, after des1, 1d
-Parallel 3   :         des5, after des3, 1d
-Parallel 4   :         des6, after des4, 1d
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;gantt
-section Section
-Completed :done,    des1, 2014-01-06,2014-01-08
-Active        :active,  des2, 2014-01-07, 3d
-Parallel 1   :         des3, after des1, 1d
-Parallel 2   :         des4, after des1, 1d
-Parallel 3   :         des5, after des3, 1d
-Parallel 4   :         des6, after des4, 1d
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;An example &lt;strong&gt;class diagram&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
-classDiagram
-Class01 &amp;lt;|-- AveryLongClass : Cool
-&amp;lt;&amp;lt;interface&amp;gt;&amp;gt; Class01
-Class09 --&amp;gt; C2 : Where am i?
-Class09 --* C3
-Class09 --|&amp;gt; Class07
-Class07 : equals()
-Class07 : Object[] elementData
-Class01 : size()
-Class01 : int chimp
-Class01 : int gorilla
-class Class10 {
-  &amp;lt;&amp;lt;service&amp;gt;&amp;gt;
-  int id
-  size()
-}
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;classDiagram
-Class01 &amp;lt;|-- AveryLongClass : Cool
-&amp;lt;&amp;lt;interface&amp;gt;&amp;gt; Class01
-Class09 --&amp;gt; C2 : Where am i?
-Class09 --* C3
-Class09 --|&amp;gt; Class07
-Class07 : equals()
-Class07 : Object[] elementData
-Class01 : size()
-Class01 : int chimp
-Class01 : int gorilla
-class Class10 {
-  &amp;lt;&amp;lt;service&amp;gt;&amp;gt;
-  int id
-  size()
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;An example &lt;strong&gt;state diagram&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
-stateDiagram
-[*] --&amp;gt; Still
-Still --&amp;gt; [*]
-Still --&amp;gt; Moving
-Moving --&amp;gt; Still
-Moving --&amp;gt; Crash
-Crash --&amp;gt; [*]
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;stateDiagram
-[*] --&amp;gt; Still
-Still --&amp;gt; [*]
-Still --&amp;gt; Moving
-Moving --&amp;gt; Still
-Moving --&amp;gt; Crash
-Crash --&amp;gt; [*]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;todo-lists&#34;&gt;Todo lists&lt;/h3&gt;
-&lt;p&gt;You can even write your todo lists in Academic too:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;- [x] Write math example
-- [x] Write diagram example
-- [ ] Do something else
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
+      <title>KEYS R workshop</title>
+      <link>/post/2020-06-10-keys/2020-06-10-keys-r-workshop/</link>
+      <pubDate>Wed, 10 Jun 2020 09:13:14 -0500</pubDate>
+      <guid>/post/2020-06-10-keys/2020-06-10-keys-r-workshop/</guid>
+      <description>
+
+
+&lt;div id=&#34;about&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;About&lt;/h1&gt;
+&lt;p&gt;This is a short 1 hour and 45 minutes introduction to R and the tidyverse prepared and delivered by &lt;a href=&#34;https://kelseygonzalez.github.io/&#34;&gt;Kelsey Gonzalez&lt;/a&gt; for BIO5 Institute’s &lt;a href=&#34;https://keys.arizona.edu/&#34;&gt;KEYS&lt;/a&gt; (Keep Engaging Youth in Science) Research Internship Program on June 10, 2020.&lt;/p&gt;
+&lt;p&gt;A PDF of this lesson is available &lt;a href=&#34;https://github.com/kelseygonzalez/R-Keys-Workshop-June10/blob/master/R_KEYS_JUNE9.pdf&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This lesson is largely adapted from &lt;a href=&#34;http://swcarpentry.github.io/r-novice-gapminder/&#34;&gt;Software&lt;/a&gt; and &lt;a href=&#34;https://datacarpentry.org/r-socialsci/&#34;&gt;Data Carpentry&lt;/a&gt; materials by Kelsey Gonzalez for use with the &lt;a href=&#34;https://github.com/allisonhorst/penguins&#34;&gt;Penguins&lt;/a&gt; dataset.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;getting-set-up&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Getting set up&lt;/h1&gt;
+&lt;p&gt;R works by having a base programming language that can be added on to with community-created open-source extensions called &lt;em&gt;packages&lt;/em&gt;. We’re going to first install two packages that we will work with today.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;tidyverse&amp;quot;)
+install.packages(&amp;quot;palmerpenguins&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(palmerpenguins)&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;what-is-an-r-package&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;What is an R package?&lt;/h2&gt;
+&lt;p&gt;An R package is a complete unit for sharing code with others. Each R package contains the code for a set of R functions, the documentation (or description) for each of the functions, as well as a practice dataset to learn the functions on.&lt;/p&gt;
+&lt;p&gt;Generally, each R package is built with a specific task in mind. For instance, the package &lt;strong&gt;&lt;code&gt;dplyr&lt;/code&gt;&lt;/strong&gt; provides easy tools for the most common data manipulation tasks. It is built to work directly with data frames, with many common tasks optimized by being written in a compiled language (C++) (not all R packages are written in R!).&lt;/p&gt;
+&lt;p&gt;But there are also packages available for a wide range of tasks including building plots (&lt;strong&gt;&lt;code&gt;ggplot2&lt;/code&gt;&lt;/strong&gt;, which we’ll see later), downloading data from the NCBI database, or performing statistical analysis on your data set. Many packages such as these are housed on, and downloadable from, the &lt;strong&gt;C&lt;/strong&gt;omprehensive &lt;strong&gt;R&lt;/strong&gt; &lt;strong&gt;A&lt;/strong&gt;rchive &lt;strong&gt;N&lt;/strong&gt;etwork (CRAN) using &lt;code&gt;install.packages&lt;/code&gt;. This function makes the package accessible by your R installation with the command &lt;code&gt;library()&lt;/code&gt;, as you did with &lt;code&gt;tidyverse&lt;/code&gt; earlier.&lt;/p&gt;
+&lt;p&gt;To easily access the documentation for a package within R or RStudio, use &lt;code&gt;help(package = &#34;package_name&#34;)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Let’s first load the data we’ll be using today, which contains observations for 3 penguin species on islands in the Palmer Archipelago, Antarctica. More information about this dataset can be found at &lt;a href=&#34;github.com/allisonhorst/penguins&#34;&gt;github.com/allisonhorst/penguins&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We only have a short lesson today, so I won’t get into the specifics on what we’re doing here. Just know we loaded a package called penguins above which contained a dataset called penguins. By calling &lt;code&gt;data()&lt;/code&gt;, we’re asking r to load a dataset that is in the package. &lt;code&gt;R&lt;/code&gt; also can read csv files, excel files, and &lt;em&gt;many&lt;/em&gt; other data types.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;data(penguins)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data-wrangling-visualization&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Data Wrangling &amp;amp; visualization:&lt;/h1&gt;
+&lt;p&gt;adapted from: &lt;a href=&#34;https://datacarpentry.org/r-socialsci/03-dplyr-tidyr/index.html&#34; class=&#34;uri&#34;&gt;https://datacarpentry.org/r-socialsci/03-dplyr-tidyr/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;questions:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Write math example&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Write diagram example&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Do something else&lt;/li&gt;
+&lt;li&gt;How can I select specific rows and/or columns from a data frame?&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;How can I combine multiple commands into a single command?&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;How can create new columns or remove existing columns from a data frame?&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;How can I reformat a dataframe to meet my needs?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;tables&#34;&gt;Tables&lt;/h3&gt;
-&lt;p&gt;Represent your data in tables:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
+&lt;p&gt;objectives:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Describe the purpose of an R package and the &lt;strong&gt;&lt;code&gt;dplyr&lt;/code&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;code&gt;tidyr&lt;/code&gt;&lt;/strong&gt; packages.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Select certain columns in a data frame with the &lt;strong&gt;&lt;code&gt;dplyr&lt;/code&gt;&lt;/strong&gt; function &lt;code&gt;select&lt;/code&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Select certain rows in a data frame according to filtering conditions with the &lt;strong&gt;&lt;code&gt;dplyr&lt;/code&gt;&lt;/strong&gt; function &lt;code&gt;filter&lt;/code&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Link the output of one &lt;strong&gt;&lt;code&gt;dplyr&lt;/code&gt;&lt;/strong&gt; function to the input of another function with the ‘pipe’ operator &lt;code&gt;%&amp;gt;%&lt;/code&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Add new columns to a data frame that are functions of existing columns with &lt;code&gt;mutate&lt;/code&gt;.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Use the split-apply-combine concept for data analysis.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;summarize&lt;/code&gt;, &lt;code&gt;group_by&lt;/code&gt;, and &lt;code&gt;count&lt;/code&gt; to split a data frame into groups of observations, apply a summary statistics for each group, and then combine the results.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Describe the concept of a wide and a long table format and for which purpose those formats are useful.&lt;/li&gt;
+&lt;li&gt;Describe what key-value pairs are.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Reshape a data frame from long to wide format and back with the &lt;code&gt;spread&lt;/code&gt; and &lt;code&gt;gather&lt;/code&gt; commands from the &lt;strong&gt;&lt;code&gt;tidyr&lt;/code&gt;&lt;/strong&gt; package.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Export a data frame to a csv file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;keypoints:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use the &lt;code&gt;dplyr&lt;/code&gt; package to manipulate dataframes.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;select()&lt;/code&gt; to choose variables from a dataframe.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;filter()&lt;/code&gt; to choose data based on values.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;group_by()&lt;/code&gt; and &lt;code&gt;summarize()&lt;/code&gt; to work with subsets of data.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;mutate()&lt;/code&gt; to create new variables.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Use the &lt;code&gt;tidyr&lt;/code&gt; package to change the layout of dataframes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;data-manipulation-using-dplyr&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Data Manipulation using &lt;strong&gt;&lt;code&gt;dplyr&lt;/code&gt;&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;dplyr&lt;/code&gt;&lt;/strong&gt; is a package for making tabular data manipulation easier by using a limited set of functions that can be combined to extract and summarize insights from your data.&lt;/p&gt;
+&lt;p&gt;Similarly to &lt;strong&gt;&lt;code&gt;readr&lt;/code&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;code&gt;dplyr&lt;/code&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;code&gt;tidyr&lt;/code&gt;&lt;/strong&gt; are also part of the tidyverse. These packages were loaded in R’s memory when we called &lt;code&gt;library(tidyverse)&lt;/code&gt; earlier.&lt;/p&gt;
+&lt;p&gt;To learn more about &lt;strong&gt;&lt;code&gt;dplyr&lt;/code&gt;&lt;/strong&gt; after the workshop, you may want to check out this
+&lt;a href=&#34;https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf&#34;&gt;handy data transformation with &lt;strong&gt;&lt;code&gt;dplyr&lt;/code&gt;&lt;/strong&gt; cheatsheet&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We’re going to learn some of the most common &lt;strong&gt;&lt;code&gt;dplyr&lt;/code&gt;&lt;/strong&gt; functions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;select()&lt;/code&gt;: subset columns&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;filter()&lt;/code&gt;: subset rows on conditions&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mutate()&lt;/code&gt;: create new columns by using information from other columns&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;group_by()&lt;/code&gt; and &lt;code&gt;summarize()&lt;/code&gt;: create summary statistics on grouped data&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;arrange()&lt;/code&gt;: sort results&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;explore-our-data&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Explore our data&lt;/h2&gt;
+&lt;p&gt;Let’s explore our data first. There’s 7 variables or columns that we have to work with.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;species&lt;/code&gt;: penguin species (Chinstrap, Adélie, or Gentoo)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bill_length_mm&lt;/code&gt;: bill length (mm)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bill_depth_mm&lt;/code&gt;: bill depth (mm)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;flipper_length_mm&lt;/code&gt;: flipper length (mm)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;body_mass_g&lt;/code&gt;: body mass (g)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;island&lt;/code&gt;: island name (Dream, Torgersen, or Biscoe) in the Palmer Archipelago (Antarctica)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sex&lt;/code&gt;: penguin sex&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here’s what the three penguins species look like in real life:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/allisonhorst/palmerpenguins/raw/master/man/figures/lter_penguins.png&#34; width=&#34;300&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;We have a few options to preview our dataframe. My favorite is &lt;code&gt;glimpse()&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;glimpse(penguins)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can also &lt;code&gt;View()&lt;/code&gt; the data, which opens the data in a R Studio viewer pane. Note the capital V.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;View(penguins)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;selecting-columns-and-filtering-rows&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Selecting columns and filtering rows&lt;/h2&gt;
+&lt;p&gt;To select columns of a data frame, use &lt;code&gt;select()&lt;/code&gt;. The first argument to this function is the data frame (&lt;code&gt;penguins&lt;/code&gt;), and the subsequent arguments are the columns to keep.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;select(penguins, species, body_mass_g, sex)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To choose rows based on a specific criteria, use &lt;code&gt;filter()&lt;/code&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;filter(penguins, island == &amp;quot;Biscoe&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The filter function works with most boolean operators, namely:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;First Header&lt;/th&gt;
-&lt;th&gt;Second Header&lt;/th&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;center&#34;&gt;Operator&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Description&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Content Cell&lt;/td&gt;
-&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;lt;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;less than&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Content Cell&lt;/td&gt;
-&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;lt;=&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;less than or equal to&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;greater than&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;&amp;gt;=&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;greater than or equal to&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;==&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;exactly equal to&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;!=&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;not equal to&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;!x&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Not x&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;x | y&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;x OR y&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;x &amp;amp; y&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;x AND y&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;code&gt;isTRUE(x)&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;test if X is TRUE&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id=&#34;asides&#34;&gt;Asides&lt;/h3&gt;
-&lt;p&gt;Academic supports a 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/#alerts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcode for asides&lt;/a&gt;, also referred to as &lt;em&gt;notices&lt;/em&gt;, &lt;em&gt;hints&lt;/em&gt;, or &lt;em&gt;alerts&lt;/em&gt;. By wrapping a paragraph in &lt;code&gt;{{% alert note %}} ... {{% /alert %}}&lt;/code&gt;, it will render as an aside.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% alert note %}}
-A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
-{{% /alert %}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
-  &lt;/div&gt;
 &lt;/div&gt;
-&lt;h3 id=&#34;spoilers&#34;&gt;Spoilers&lt;/h3&gt;
-&lt;p&gt;Add a spoiler to a page to reveal text, such as an answer to a question, after a button is clicked.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; spoiler text=&amp;quot;Click to view the spoiler&amp;quot; &amp;gt;}}
-You found me!
-{{&amp;lt; /spoiler &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;spoiler &#34; &gt;
-  &lt;p&gt;
-    &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-1&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-1&#34;&gt;
-      Click to view the spoiler
-    &lt;/a&gt;
-  &lt;/p&gt;
-  &lt;div class=&#34;collapse card &#34; id=&#34;spoiler-1&#34;&gt;
-    &lt;div class=&#34;card-body&#34;&gt;
-      You found me!
-    &lt;/div&gt;
-  &lt;/div&gt;
+&lt;div id=&#34;pipes&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Pipes&lt;/h2&gt;
+&lt;p&gt;What if you want to select and filter at the same time? There are three ways to do this: use intermediate steps, nested functions, or pipes.&lt;/p&gt;
+&lt;p&gt;With intermediate steps, you create a temporary data frame and use that as input to the next function, like this:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;penguins_biscoe &amp;lt;- filter(penguins, island == &amp;quot;Biscoe&amp;quot;)
+penguins_biscoe &amp;lt;- select(penguins_biscoe, species, body_mass_g, sex)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is readable, but can clutter up your workspace with lots of objects that you have to name individually. With multiple steps, that can be hard to keep track of.&lt;/p&gt;
+&lt;p&gt;You can also nest functions (i.e. one function inside of another), like this:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;penguins_Biscoe &amp;lt;- select(filter(penguins, island == &amp;quot;Biscoe&amp;quot;),  species, body_mass_g, sex)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is handy, but can be difficult to read if too many functions are nested, as R evaluates the expression from the inside out (in this case, filtering, then selecting).&lt;/p&gt;
+&lt;p&gt;The last option, &lt;em&gt;pipes&lt;/em&gt;, are a powerful addition to R. Pipes let you take the output of one function and send it directly to the next, which is useful when you need to do many things to the same dataset. Pipes in R look like &lt;code&gt;%&amp;gt;%&lt;/code&gt; and are made available via the &lt;strong&gt;&lt;code&gt;magrittr&lt;/code&gt;&lt;/strong&gt; package, installed automatically with &lt;strong&gt;&lt;code&gt;dplyr&lt;/code&gt;&lt;/strong&gt;. If you use RStudio, you can type the pipe with &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;M&lt;/kbd&gt; if you have a PC or &lt;kbd&gt;Cmd&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;M&lt;/kbd&gt; if you have a Mac.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;penguins %&amp;gt;%
+    filter(island == &amp;quot;Biscoe&amp;quot;) %&amp;gt;%
+    select(species, body_mass_g, sex)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 168 x 3
+##    species body_mass_g sex   
+##    &amp;lt;fct&amp;gt;         &amp;lt;int&amp;gt; &amp;lt;fct&amp;gt; 
+##  1 Adelie         3400 female
+##  2 Adelie         3600 male  
+##  3 Adelie         3800 female
+##  4 Adelie         3950 male  
+##  5 Adelie         3800 male  
+##  6 Adelie         3800 female
+##  7 Adelie         3550 male  
+##  8 Adelie         3200 female
+##  9 Adelie         3150 female
+## 10 Adelie         3950 male  
+## # … with 158 more rows&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the above code, we use the pipe to send the &lt;code&gt;penguins&lt;/code&gt; dataset first through &lt;code&gt;filter()&lt;/code&gt; to keep rows where &lt;code&gt;island&lt;/code&gt; is “Biscoe”, then through &lt;code&gt;select()&lt;/code&gt; to keep only the &lt;code&gt;species&lt;/code&gt;, &lt;code&gt;body_mass_g&lt;/code&gt;,and &lt;code&gt;sex&lt;/code&gt; columns. Since &lt;code&gt;%&amp;gt;%&lt;/code&gt; takes the object on its left and passes it as the first argument to the function on its right, we don’t need to explicitly include the data frame as an argument to the &lt;code&gt;filter()&lt;/code&gt; and &lt;code&gt;select()&lt;/code&gt; functions any more.&lt;/p&gt;
+&lt;p&gt;Some may find it helpful to read the pipe like the word “then”. For instance, in the above example, we take the data frame &lt;code&gt;penguins&lt;/code&gt;, &lt;em&gt;then&lt;/em&gt; we &lt;code&gt;filter&lt;/code&gt; for rows with &lt;code&gt;island == &#34;Biscoe&#34;&lt;/code&gt;, &lt;em&gt;then&lt;/em&gt; we &lt;code&gt;select&lt;/code&gt; columns &lt;code&gt;species&lt;/code&gt;, &lt;code&gt;body_mass_g&lt;/code&gt;,and &lt;code&gt;sex&lt;/code&gt;. The &lt;strong&gt;&lt;code&gt;dplyr&lt;/code&gt;&lt;/strong&gt; functions by themselves are somewhat simple, but by combining them into linear workflows with the pipe, we can accomplish more complex manipulations of data frames.&lt;/p&gt;
+&lt;p&gt;If we want to create a new object with this smaller version of the data, we can assign it a new name:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;penguins_biscoe &amp;lt;- penguins %&amp;gt;%
+    filter(island == &amp;quot;Biscoe&amp;quot;) %&amp;gt;%
+    select(species, body_mass_g, sex)
+
+penguins_biscoe&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 168 x 3
+##    species body_mass_g sex   
+##    &amp;lt;fct&amp;gt;         &amp;lt;int&amp;gt; &amp;lt;fct&amp;gt; 
+##  1 Adelie         3400 female
+##  2 Adelie         3600 male  
+##  3 Adelie         3800 female
+##  4 Adelie         3950 male  
+##  5 Adelie         3800 male  
+##  6 Adelie         3800 female
+##  7 Adelie         3550 male  
+##  8 Adelie         3200 female
+##  9 Adelie         3150 female
+## 10 Adelie         3950 male  
+## # … with 158 more rows&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that the final data frame (&lt;code&gt;penguins_biscoe&lt;/code&gt;) is the leftmost part of this expression becuase it is receiving an assignment.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;exercise&#34;&gt;Exercise&lt;/h2&gt;
+&lt;p&gt;Using pipes, subset the &lt;code&gt;penguins&lt;/code&gt; data to include all species &lt;em&gt;EXCEPT&lt;/em&gt; &lt;em&gt;Adelie&lt;/em&gt; and retain the species column in addition to those relating to their bill.
+## Solution&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;penguins %&amp;gt;%
+    filter(species != &amp;quot;Adelie&amp;quot;) %&amp;gt;%
+    select(bill_length_mm, bill_depth_mm)&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;mutate&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Mutate&lt;/h3&gt;
+&lt;p&gt;Frequently you’ll want to create new columns based on the values in existing columns, for example to do unit conversions, or to find the ratio of values in two columns. For this we’ll use &lt;code&gt;mutate()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;We might be interested in the flipper length of penguins in cm instead of milimeters:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;penguins %&amp;gt;%
+    mutate(flipper_length_cm = flipper_length_mm / 10)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 344 x 9
+##    species island bill_length_mm bill_depth_mm flipper_length_… body_mass_g
+##    &amp;lt;fct&amp;gt;   &amp;lt;fct&amp;gt;           &amp;lt;dbl&amp;gt;         &amp;lt;dbl&amp;gt;            &amp;lt;int&amp;gt;       &amp;lt;int&amp;gt;
+##  1 Adelie  Torge…           39.1          18.7              181        3750
+##  2 Adelie  Torge…           39.5          17.4              186        3800
+##  3 Adelie  Torge…           40.3          18                195        3250
+##  4 Adelie  Torge…           NA            NA                 NA          NA
+##  5 Adelie  Torge…           36.7          19.3              193        3450
+##  6 Adelie  Torge…           39.3          20.6              190        3650
+##  7 Adelie  Torge…           38.9          17.8              181        3625
+##  8 Adelie  Torge…           39.2          19.6              195        4675
+##  9 Adelie  Torge…           34.1          18.1              193        3475
+## 10 Adelie  Torge…           42            20.2              190        4250
+## # … with 334 more rows, and 3 more variables: sex &amp;lt;fct&amp;gt;, year &amp;lt;int&amp;gt;,
+## #   flipper_length_cm &amp;lt;dbl&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We may be interested in investigating whether being a member of an irrigation association had any effect on the ratio of household members to rooms. To look at this relationship, we will first remove data from our dataset where the respondent didn’t answer the question of whether they were a member of an irrigation association. These cases are recorded as “NULL” in the dataset.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;exercise-1&#34;&gt;Exercise&lt;/h2&gt;
+&lt;p&gt;Create a new data frame from the &lt;code&gt;penguins&lt;/code&gt; data that meets the following criteria: contains only the &lt;code&gt;species&lt;/code&gt; column and a new column called &lt;code&gt;body_mass_kg&lt;/code&gt; containing a transformed body_mass_g. Only the rows where &lt;code&gt;body_mass_kg&lt;/code&gt; is greater than 4 should be shown in the final data frame. &lt;em&gt;How many rows do you have? &lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt;: think about how the commands should be ordered to produce this data frame!&lt;/p&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
+&lt;/blockquote&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;penguins_large &amp;lt;- penguins %&amp;gt;%
+    mutate(body_mass_kg = body_mass_g / 1000) %&amp;gt;%
+    filter(body_mass_kg &amp;gt; 4) %&amp;gt;%
+    select(species, body_mass_kg)&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;h3 id=&#34;icons&#34;&gt;Icons&lt;/h3&gt;
-&lt;p&gt;Academic enables you to use a wide range of 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/page-builder/#icons&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;icons from &lt;em&gt;Font Awesome&lt;/em&gt; and &lt;em&gt;Academicons&lt;/em&gt;&lt;/a&gt; in addition to 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/#emojis&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;emojis&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Here are some examples using the &lt;code&gt;icon&lt;/code&gt; shortcode to render icons:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; icon name=&amp;quot;terminal&amp;quot; pack=&amp;quot;fas&amp;quot; &amp;gt;}} Terminal  
-{{&amp;lt; icon name=&amp;quot;python&amp;quot; pack=&amp;quot;fab&amp;quot; &amp;gt;}} Python  
-{{&amp;lt; icon name=&amp;quot;r-project&amp;quot; pack=&amp;quot;fab&amp;quot; &amp;gt;}} R
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;p&gt;
-  &lt;i class=&#34;fas fa-terminal  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Terminal&lt;br&gt;
-
-  &lt;i class=&#34;fab fa-python  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Python&lt;br&gt;
-
-  &lt;i class=&#34;fab fa-r-project  pr-1 fa-fw&#34;&gt;&lt;/i&gt; R&lt;/p&gt;
-&lt;h3 id=&#34;did-you-find-this-page-helpful-consider-sharing-it-&#34;&gt;Did you find this page helpful? Consider sharing it 🙌&lt;/h3&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Display Jupyter Notebooks with Academic</title>
-      <link>/post/jupyter/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/post/jupyter/</guid>
-      <description>&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from IPython.core.display import Image
-Image(&#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&#39;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;./index_1_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&amp;quot;Welcome to Academic!&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;Welcome to Academic!
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;install-python-and-jupyterlab&#34;&gt;Install Python and JupyterLab&lt;/h2&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://www.anaconda.com/distribution/#download-section&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Install Anaconda&lt;/a&gt; which includes Python 3 and JupyterLab.&lt;/p&gt;
-&lt;p&gt;Alternatively, install JupyterLab with &lt;code&gt;pip3 install jupyterlab&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;create-or-upload-a-jupyter-notebook&#34;&gt;Create or upload a Jupyter notebook&lt;/h2&gt;
-&lt;p&gt;Run the following commands in your Terminal, substituting &lt;code&gt;&amp;lt;MY-WEBSITE-FOLDER&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;SHORT-POST-TITLE&amp;gt;&lt;/code&gt; with the file path to your Academic website folder and a short title for your blog post (use hyphens instead of spaces), respectively:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir -p &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
-cd &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
-jupyter lab index.ipynb
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The &lt;code&gt;jupyter&lt;/code&gt; command above will launch the JupyterLab editor, allowing us to add Academic metadata and write the content.&lt;/p&gt;
-&lt;h2 id=&#34;edit-your-post-metadata&#34;&gt;Edit your post metadata&lt;/h2&gt;
-&lt;p&gt;The first cell of your Jupter notebook will contain your post metadata (
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/front-matter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;front matter&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;In Jupter, choose &lt;em&gt;Markdown&lt;/em&gt; as the type of the first cell and wrap your Academic metadata in three dashes, indicating that it is YAML front matter:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
-title: My post&#39;s title
-date: 2019-09-01
-
-# Put any other Academic metadata here...
----
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Edit the metadata of your post, using the 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;documentation&lt;/a&gt; as a guide to the available options.&lt;/p&gt;
-&lt;p&gt;To set a 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#featured-image&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;featured image&lt;/a&gt;, place an image named &lt;code&gt;featured&lt;/code&gt; into your post&amp;rsquo;s folder.&lt;/p&gt;
-&lt;p&gt;For other tips, such as using math, see the guide on 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;writing content with Academic&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;convert-notebook-to-markdown&#34;&gt;Convert notebook to Markdown&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;jupyter nbconvert index.ipynb --to markdown --NbConvertApp.output_files_dir=.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
-&lt;p&gt;This post was created with Jupyter. The orginal files can be found at &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&#34;&gt;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Academic: the website builder for Hugo</title>
-      <link>/post/getting-started/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/post/getting-started/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Create a free website with Academic using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 &lt;em&gt;widgets&lt;/em&gt;, &lt;em&gt;themes&lt;/em&gt;, and &lt;em&gt;language packs&lt;/em&gt; included!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Check out the latest &lt;strong&gt;demo&lt;/strong&gt;&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes, or 
-&lt;a href=&#34;https://sourcethemes.com/academic/#expo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;view the &lt;strong&gt;showcase&lt;/strong&gt;&lt;/a&gt; of personal, project, and business sites.&lt;/p&gt;
+&lt;div id=&#34;split-apply-combine-data-analysis-and-the-summarize-function&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Split-apply-combine data analysis and the summarize() function&lt;/h3&gt;
+&lt;p&gt;Many data analysis tasks can be approached using the &lt;em&gt;split-apply-combine&lt;/em&gt; paradigm: split the data into groups, apply some analysis to each group, and then combine the results. &lt;strong&gt;&lt;code&gt;dplyr&lt;/code&gt;&lt;/strong&gt; makes this very easy through the use of the &lt;code&gt;group_by()&lt;/code&gt; function.&lt;/p&gt;
+&lt;div id=&#34;the-summarize-function&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;The &lt;code&gt;summarize()&lt;/code&gt; function&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;group_by()&lt;/code&gt; is often used together with &lt;code&gt;summarize()&lt;/code&gt;, which collapses each group into a single-row summary of that group. &lt;code&gt;group_by()&lt;/code&gt; takes as arguments the column names that contain the &lt;strong&gt;categorical&lt;/strong&gt; variables for which you want to calculate the summary statistics. So to compute the average household size by island:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;penguins %&amp;gt;%
+    group_by(island) %&amp;gt;%
+    summarize(mean_flipper_length_mm = mean(flipper_length_mm))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 3 x 2
+##   island    mean_flipper_length_mm
+##   &amp;lt;fct&amp;gt;                      &amp;lt;dbl&amp;gt;
+## 1 Biscoe                       NA 
+## 2 Dream                       193.
+## 3 Torgersen                    NA&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You may also have noticed that the output has a lot of &lt;code&gt;NA&lt;/code&gt;! When &lt;code&gt;R&lt;/code&gt; does calculations with missing data, it (correctly) doesn’t know how to evaluate them and forces the result to &lt;code&gt;NA&lt;/code&gt;. to solve this, we need to add in a special option to tell R that we want to ignore the missing values.&lt;/p&gt;
+&lt;p&gt;Use the &lt;code&gt;?&lt;/code&gt; function on &lt;code&gt;mean()&lt;/code&gt; to figure out what this option is.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;penguins %&amp;gt;%
+    group_by(island) %&amp;gt;%
+    summarize(mean_flipper_length_mm = mean(flipper_length_mm, na.rm = TRUE))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 3 x 2
+##   island    mean_flipper_length_mm
+##   &amp;lt;fct&amp;gt;                      &amp;lt;dbl&amp;gt;
+## 1 Biscoe                      210.
+## 2 Dream                       193.
+## 3 Torgersen                   191.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can also group by multiple columns:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;penguins %&amp;gt;%
+    group_by(island, species) %&amp;gt;%
+    summarize(mean_flipper_length_mm = mean(flipper_length_mm, na.rm = TRUE))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 5 x 3
+## # Groups:   island [3]
+##   island    species   mean_flipper_length_mm
+##   &amp;lt;fct&amp;gt;     &amp;lt;fct&amp;gt;                      &amp;lt;dbl&amp;gt;
+## 1 Biscoe    Adelie                      189.
+## 2 Biscoe    Gentoo                      217.
+## 3 Dream     Adelie                      190.
+## 4 Dream     Chinstrap                   196.
+## 5 Torgersen Adelie                      191.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I expected to get 9 rows because we have 3 islands and 3 species of penguin. What do you think is going on here?&lt;/p&gt;
+&lt;p&gt;Once the data are grouped, you can also summarize multiple variables at the same time (and not necessarily on the same variable). For instance, we could add a column indicating the minimum and maximum flipper length for each island for each species:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;penguins %&amp;gt;%
+    group_by(island, species) %&amp;gt;%
+    summarize(mean_flipper_length_mm = mean(flipper_length_mm, na.rm = TRUE),
+              min_flipper_length_mm = min(flipper_length_mm, na.rm = TRUE),
+              max_flipper_length_mm = max(flipper_length_mm, na.rm = TRUE))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 5 x 5
+## # Groups:   island [3]
+##   island   species   mean_flipper_lengt… min_flipper_length… max_flipper_length…
+##   &amp;lt;fct&amp;gt;    &amp;lt;fct&amp;gt;                   &amp;lt;dbl&amp;gt;               &amp;lt;int&amp;gt;               &amp;lt;int&amp;gt;
+## 1 Biscoe   Adelie                   189.                 172                 203
+## 2 Biscoe   Gentoo                   217.                 203                 231
+## 3 Dream    Adelie                   190.                 178                 208
+## 4 Dream    Chinstrap                196.                 178                 212
+## 5 Torgers… Adelie                   191.                 176                 210&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It is sometimes useful to rearrange the result of a query to inspect the values. For instance, we can sort on &lt;code&gt;mean_flipper_length_mm&lt;/code&gt; to put the group with the shortest flippers first:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;penguins %&amp;gt;%
+    group_by(island, species) %&amp;gt;%
+    summarize(mean_flipper_length_mm = mean(flipper_length_mm, na.rm = TRUE),
+              min_flipper_length_mm = min(flipper_length_mm, na.rm = TRUE),
+              max_flipper_length_mm = max(flipper_length_mm, na.rm = TRUE)) %&amp;gt;%
+    arrange(mean_flipper_length_mm)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 5 x 5
+## # Groups:   island [3]
+##   island   species   mean_flipper_lengt… min_flipper_length… max_flipper_length…
+##   &amp;lt;fct&amp;gt;    &amp;lt;fct&amp;gt;                   &amp;lt;dbl&amp;gt;               &amp;lt;int&amp;gt;               &amp;lt;int&amp;gt;
+## 1 Biscoe   Adelie                   189.                 172                 203
+## 2 Dream    Adelie                   190.                 178                 208
+## 3 Torgers… Adelie                   191.                 176                 210
+## 4 Dream    Chinstrap                196.                 178                 212
+## 5 Biscoe   Gentoo                   217.                 203                 231&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To sort in descending order, we need to add the &lt;code&gt;desc()&lt;/code&gt; function.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;penguins %&amp;gt;%
+    group_by(island, species) %&amp;gt;%
+    summarize(mean_flipper_length_mm = mean(flipper_length_mm, na.rm = TRUE),
+              min_flipper_length_mm = min(flipper_length_mm, na.rm = TRUE),
+              max_flipper_length_mm = max(flipper_length_mm, na.rm = TRUE)) %&amp;gt;%
+    arrange(desc(mean_flipper_length_mm))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 5 x 5
+## # Groups:   island [3]
+##   island   species   mean_flipper_lengt… min_flipper_length… max_flipper_length…
+##   &amp;lt;fct&amp;gt;    &amp;lt;fct&amp;gt;                   &amp;lt;dbl&amp;gt;               &amp;lt;int&amp;gt;               &amp;lt;int&amp;gt;
+## 1 Biscoe   Gentoo                   217.                 203                 231
+## 2 Dream    Chinstrap                196.                 178                 212
+## 3 Torgers… Adelie                   191.                 176                 210
+## 4 Dream    Adelie                   190.                 178                 208
+## 5 Biscoe   Adelie                   189.                 172                 203&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;exercise-2&#34;&gt;Exercise:&lt;/h2&gt;
+&lt;p&gt;Use &lt;code&gt;group_by()&lt;/code&gt; and &lt;code&gt;summarize()&lt;/code&gt; to find the mean bill_length and bill_depth each species.&lt;/p&gt;
+&lt;h2 id=&#34;solution-1&#34;&gt;Solution&lt;/h2&gt;
+&lt;/blockquote&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;penguins %&amp;gt;%
+  group_by(species) %&amp;gt;%
+  summarize(
+      mean_bill_length = mean(bill_length_mm, na.rm = TRUE),
+      mean_bill_depth = mean(bill_depth_mm, na.rm = TRUE)
+  )&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data-visualization&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Data Visualization&lt;/h1&gt;
+&lt;p&gt;adapted from: &lt;a href=&#34;https://datacarpentry.org/r-socialsci/04-ggplot2/index.html&#34; class=&#34;uri&#34;&gt;https://datacarpentry.org/r-socialsci/04-ggplot2/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;questions:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;👉 
-&lt;a href=&#34;#install&#34;&gt;&lt;strong&gt;Get Started&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;📚 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;View the &lt;strong&gt;documentation&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💬 
-&lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Ask a question&lt;/strong&gt; on the forum&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;👥 
-&lt;a href=&#34;https://spectrum.chat/academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chat with the &lt;strong&gt;community&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;🐦 Twitter: 
-&lt;a href=&#34;https://twitter.com/source_themes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@source_themes&lt;/a&gt; 
-&lt;a href=&#34;https://twitter.com/GeorgeCushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@GeorgeCushen&lt;/a&gt; 
-&lt;a href=&#34;https://twitter.com/search?q=%23MadeWithAcademic&amp;amp;src=typd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#MadeWithAcademic&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💡 
-&lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Request a &lt;strong&gt;feature&lt;/strong&gt; or report a &lt;strong&gt;bug&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;⬆️ &lt;strong&gt;Updating?&lt;/strong&gt; View the 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Update Guide&lt;/a&gt; and 
-&lt;a href=&#34;https://sourcethemes.com/academic/updates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;❤️ &lt;strong&gt;Support development&lt;/strong&gt; of Academic:
-&lt;ul&gt;
-&lt;li&gt;☕️ 
-&lt;a href=&#34;https://paypal.me/cushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Donate a coffee&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💵 
-&lt;a href=&#34;https://www.patreon.com/cushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Become a backer on &lt;strong&gt;Patreon&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;🖼️ 
-&lt;a href=&#34;https://www.redbubble.com/people/neutreno/works/34387919-academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Decorate your laptop or journal with an Academic &lt;strong&gt;sticker&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;👕 
-&lt;a href=&#34;https://academic.threadless.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wear the &lt;strong&gt;T-shirt&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;👩‍💻 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/contribute/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Contribute&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;What are the components of a ggplot?&lt;br /&gt;
 &lt;/li&gt;
+&lt;li&gt;How do I create scatterplots, boxplots, and barplots?&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;How can I change the aesthetics (ex. colour, transparency) of my plot?&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;How can I create multiple plots at once?&lt;/li&gt;
 &lt;/ul&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure id=&#34;figure-academic-is-mobile-first-with-a-responsive-design-to-ensure-that-your-site-looks-stunning-on-every-device&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; data-caption=&#34;Academic is mobile first with a responsive design to ensure that your site looks stunning on every device.&#34;&gt;
-
-
-  &lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; alt=&#34;&#34;  &gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption&gt;
-    Academic is mobile first with a responsive design to ensure that your site looks stunning on every device.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
-&lt;p&gt;&lt;strong&gt;Key features:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;objectives:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/page-builder/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;widgets&lt;/strong&gt;&lt;/a&gt; and 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/jupyter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;, or 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable 
-&lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code highlighting and 
-&lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LaTeX math&lt;/a&gt; supported&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - 
-&lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Analytics&lt;/a&gt;, 
-&lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Disqus commenting&lt;/a&gt;, Maps, Contact Forms, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one page design&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Look amazing on every screen with a mobile friendly version of your site&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-language&lt;/strong&gt; - 15+ language packs including English, 中文, and Português&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-user&lt;/strong&gt; - Each author gets their own profile page&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Privacy Pack&lt;/strong&gt; - Assists with GDPR&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Stand Out&lt;/strong&gt; - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;One-Click Deployment&lt;/strong&gt; - No servers. No databases. Only files.&lt;/li&gt;
+&lt;li&gt;Produce scatter plots, boxplots, and time series plots using ggplot.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Set universal plot settings.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Describe what faceting is and apply faceting in ggplot.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Modify the aesthetics of an existing ggplot plot (including axis labels and color).&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Build complex and customized plots from data in a data frame.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
-&lt;p&gt;Academic comes with &lt;strong&gt;automatic day (light) and night (dark) mode&lt;/strong&gt; built-in. Alternatively, visitors can  choose their preferred mode - click the sun/moon icon in the top right of the 
-&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Demo&lt;/a&gt; to see it in action! Day/night mode can also be disabled by the site admin in &lt;code&gt;params.toml&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Choose a stunning &lt;strong&gt;theme&lt;/strong&gt; and &lt;strong&gt;font&lt;/strong&gt;&lt;/a&gt; for your site. Themes are fully 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/customization/#custom-theme&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;customizable&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
+&lt;p&gt;keypoints:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;
-&lt;a href=&#34;https://github.com/sourcethemes/academic-admin&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Admin&lt;/a&gt;:&lt;/strong&gt; An admin tool to import publications from BibTeX or import assets for an offline site&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;
-&lt;a href=&#34;https://github.com/sourcethemes/academic-scripts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Scripts&lt;/a&gt;:&lt;/strong&gt; Scripts to help migrate content to new versions of Academic&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ggplot2&lt;/code&gt; is a flexible and useful tool for creating plots in R.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;The data set and coordinate system can be defined using the &lt;code&gt;ggplot&lt;/code&gt; function.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Additional layers, including geoms, are added using the &lt;code&gt;+&lt;/code&gt; operator.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Boxplots are useful for visualizing the distribution of a continuous variable.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Barplot are useful for visualizing categorical data.&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Faceting allows you to generate multiple plots based on a categorical variable.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
-&lt;p&gt;You can choose from one of the following four methods to install:&lt;/p&gt;
+&lt;div id=&#34;plotting-with-ggplot2&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Plotting with &lt;strong&gt;&lt;code&gt;ggplot2&lt;/code&gt;&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;ggplot2&lt;/code&gt;&lt;/strong&gt; is a plotting package that makes it simple to create complex plots from data stored in a data frame. It provides a programmatic interface for specifying what variables to plot, how they are displayed, and general visual properties. Therefore, we only need minimal changes if the underlying data change or if we decide to change from a bar plot to a scatterplot. This helps in creating publication quality plots with minimal amounts of adjustments and tweaking.&lt;/p&gt;
+&lt;p&gt;ggplot graphics are built step by step by adding new elements. Adding layers in this fashion allows for extensive flexibility and customization of plots.&lt;/p&gt;
+&lt;p&gt;To learn more about &lt;strong&gt;&lt;code&gt;ggplot2&lt;/code&gt;&lt;/strong&gt; after the workshop, you may want to check out this
+&lt;a href=&#34;https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf&#34;&gt;handy data transformation with &lt;strong&gt;&lt;code&gt;ggplot2&lt;/code&gt;&lt;/strong&gt; cheatsheet&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To build a ggplot, we will use the following basic template that can be used for different types of plots:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ggplot(data = &amp;lt;DATA&amp;gt;, mapping = aes(&amp;lt;MAPPINGS&amp;gt;)) +  &amp;lt;GEOM_FUNCTION&amp;gt;()&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-web-browser&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;one-click install using your web browser (recommended)&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-git&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;install on your computer using &lt;strong&gt;Git&lt;/strong&gt; with the Command Prompt/Terminal app&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-zip&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;install on your computer by downloading the &lt;strong&gt;ZIP files&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;install on your computer with &lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;use the &lt;code&gt;ggplot()&lt;/code&gt; function and bind the plot to a specific data frame using the &lt;code&gt;data&lt;/code&gt; argument&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Then 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;personalize and deploy your new site&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;updating&#34;&gt;Updating&lt;/h2&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;View the Update Guide&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Feel free to &lt;em&gt;star&lt;/em&gt; the project on 
-&lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt; to help keep track of 
-&lt;a href=&#34;https://sourcethemes.com/academic/updates&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;updates&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
-&lt;p&gt;Copyright 2016-present 
-&lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Released under the 
-&lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = penguins)&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;define a mapping (using the aesthetic (&lt;code&gt;aes&lt;/code&gt;) function), by selecting the variables to be plotted and specifying how to present them in the graph, e.g. as x/y positions or characteristics such as size, shape, color, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g)&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;add ‘geoms’ – graphical representations of the data in the plot (points,
+lines, bars). &lt;strong&gt;&lt;code&gt;ggplot2&lt;/code&gt;&lt;/strong&gt; offers many different geoms; we will use some
+common ones today, including:&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;geom_point()&lt;/code&gt; for scatter plots, dot plots, etc.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;geom_boxplot()&lt;/code&gt; for, well, boxplots!&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;geom_line()&lt;/code&gt; for trend lines, time series, etc.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To add a geom to the plot use the &lt;code&gt;+&lt;/code&gt; operator. Because we have two continuous variables, let’s use &lt;code&gt;geom_point()&lt;/code&gt; first:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
+    geom_point()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-06-10-keys/2020-06-10-keys-r-workshop.en_files/figure-html/first-ggplot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;+&lt;/code&gt; in the &lt;strong&gt;&lt;code&gt;ggplot2&lt;/code&gt;&lt;/strong&gt; package is particularly useful because it allows you to modify existing &lt;code&gt;ggplot&lt;/code&gt; objects. This means you can easily set up plot templates and conveniently explore different types of plots, so the above plot can also be generated with code like this:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Assign plot to a variable
+penguins_plot &amp;lt;- ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g))
+
+# Draw the plot
+penguins_plot +
+    geom_point()&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Anything you put in the &lt;code&gt;ggplot()&lt;/code&gt; function can be seen by any geom layers that you add (i.e., these are universal plot settings). This includes the x- and y-axis mapping you set up in &lt;code&gt;aes()&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;You can also specify mappings for a given geom independently of the mapping defined globally in the &lt;code&gt;ggplot()&lt;/code&gt; function.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;+&lt;/code&gt; sign used to add new layers must be placed at the end of the line containing the &lt;em&gt;previous&lt;/em&gt; layer. If, instead, the &lt;code&gt;+&lt;/code&gt; sign is added at the beginning of the line containing the new layer, &lt;strong&gt;&lt;code&gt;ggplot2&lt;/code&gt;&lt;/strong&gt; will not add the new layer and will return an error message.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## This is the correct syntax for adding layers
+penguins_plot +
+    geom_point()
+
+## This will not add the new layer and will return an error message
+penguins_plot
++ geom_point()&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;building-your-plots-iteratively&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Building your plots iteratively&lt;/h2&gt;
+&lt;p&gt;Building plots with &lt;strong&gt;&lt;code&gt;ggplot2&lt;/code&gt;&lt;/strong&gt; is typically an iterative process. We start by defining the dataset we’ll use, lay out the axes, and choose a geom:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
+    geom_point()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-06-10-keys/2020-06-10-keys-r-workshop.en_files/figure-html/create-ggplot-object-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Then, we start modifying this plot to extract more information from it. For instance, we can add transparency (&lt;code&gt;alpha&lt;/code&gt;) to avoid overplotting:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
+    geom_point(alpha = 0.5)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-06-10-keys/2020-06-10-keys-r-workshop.en_files/figure-html/adding-transparency-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;That only helped a little bit with the overplotting problem. We can also introduce a little bit of randomness into the position of our points using the &lt;code&gt;geom_jitter()&lt;/code&gt; function.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
+    geom_jitter(alpha = 0.5)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-06-10-keys/2020-06-10-keys-r-workshop.en_files/figure-html/adding-jitter-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;We can also add colors for all the points:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
+    geom_jitter(alpha = 0.5, color = &amp;quot;blue&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-06-10-keys/2020-06-10-keys-r-workshop.en_files/figure-html/adding-colors-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Or to color each species in the plot differently, you could use a vector as an input to the argument &lt;strong&gt;&lt;code&gt;color&lt;/code&gt;&lt;/strong&gt;. Because we are now mapping features of the data to a color, instead of setting one color for all points, the color now needs to be set inside a call to the &lt;strong&gt;&lt;code&gt;aes&lt;/code&gt;&lt;/strong&gt; function. &lt;strong&gt;&lt;code&gt;ggplot2&lt;/code&gt;&lt;/strong&gt; will provide a different color corresponding to different values in the vector. We set the value of &lt;strong&gt;&lt;code&gt;alpha&lt;/code&gt;&lt;/strong&gt; outside of the &lt;strong&gt;&lt;code&gt;aes&lt;/code&gt;&lt;/strong&gt; function call because we are using the same value for all points. Here is an example where we color by &lt;strong&gt;&lt;code&gt;island&lt;/code&gt;&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
+    geom_jitter(aes(color = species), alpha = 0.5)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-06-10-keys/2020-06-10-keys-r-workshop.en_files/figure-html/color-by-species-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;There appears to be a positive trend between flipper length and body massof penguins. This trend does not appear to be different by species, but we can see that Chinstrap and Adelie penguins have shorter flippers and small body mass than Gentoo.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;adding-labels-and-titles&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Adding Labels and Titles&lt;/h2&gt;
+&lt;p&gt;By default, the axes labels on a plot are determined by the name of the variable being plotted. However, &lt;strong&gt;&lt;code&gt;ggplot2&lt;/code&gt;&lt;/strong&gt; offers lots of customization options, like specifying the axes labels, and adding a title to the plot with relatively few lines of code. We will add more informative x and y axis labels to our plot of proportion of house type by island and also add a title.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
+    geom_jitter(aes(color = species), alpha = 0.5) +
+    labs(title=&amp;quot;Body Mass by Flipper Length&amp;quot;,
+         x=&amp;quot;Flipper Length (mm)&amp;quot;,
+         y=&amp;quot;Body Mass (g)&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-06-10-keys/2020-06-10-keys-r-workshop.en_files/figure-html/color-by-species-labeled-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;exercise-3&#34;&gt;Exercise&lt;/h2&gt;
+&lt;p&gt;Use what you just learned to create a scatter plot of &lt;code&gt;bill_length_mm&lt;/code&gt; by &lt;code&gt;species&lt;/code&gt; with the &lt;code&gt;sex&lt;/code&gt; showing in different colors. Is this a good way to show this type of data?&lt;/p&gt;
+&lt;h2 id=&#34;solution-2&#34;&gt;Solution&lt;/h2&gt;
+&lt;/blockquote&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = penguins, aes(x = species, y = bill_length_mm)) +
+geom_jitter(aes(color = sex))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is not a good way to show this type of data because it is difficult to distinguish between islands.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;boxplot&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Boxplot&lt;/h2&gt;
+&lt;p&gt;We can use boxplots to visualize the distribution of rooms for each wall type:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = penguins, aes(x = species, y = bill_length_mm)) +
+    geom_boxplot()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-06-10-keys/2020-06-10-keys-r-workshop.en_files/figure-html/boxplot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;By adding points to a boxplot, we can have a better idea of the number of measurements and of their distribution:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = penguins, aes(x = species, y = bill_length_mm)) +
+    geom_boxplot(alpha = 0) +
+    geom_jitter(alpha = 0.5, color = &amp;quot;tomato&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-06-10-keys/2020-06-10-keys-r-workshop.en_files/figure-html/boxplot-with-points-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;We can see that Adelie penguins tend to have shorter bills than other species.&lt;/p&gt;
+&lt;p&gt;Notice how the boxplot layer is behind the jitter layer? What do you need to change in the code to put the boxplot in front of the points such that it’s not covered?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;exercise-4&#34;&gt;Exercise&lt;/h2&gt;
+&lt;p&gt;Boxplots are useful summaries, but hide the &lt;em&gt;shape&lt;/em&gt; of the distribution. For example, if the distribution is bimodal, we would not see it in a boxplot. An alternative to the boxplot is the violin plot, where the shape (of the density of points) is drawn.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Replace the box plot with a violin plot; see &lt;code&gt;geom_violin()&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;solution-3&#34;&gt;Solution&lt;/h2&gt;
+&lt;/blockquote&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = penguins, aes(x = species, y = bill_length_mm)) +
+  geom_violin(alpha = 0) +
+  geom_jitter(alpha = 0.5, color = &amp;quot;tomato&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;barplots&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Barplots&lt;/h2&gt;
+&lt;p&gt;Barplots are also useful for visualizing categorical data. By default, &lt;code&gt;geom_bar&lt;/code&gt; accepts a variable for x, and plots the number of instances each value of x (in this case, wall type) appears in the dataset.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = penguins, aes(x = island)) +
+    geom_bar()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-06-10-keys/2020-06-10-keys-r-workshop.en_files/figure-html/barplot-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;We can use the &lt;code&gt;fill&lt;/code&gt; aesthetic for the &lt;code&gt;geom_bar()&lt;/code&gt; geom to color bars by the portion of each count that is from each island.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = penguins, aes(x = island)) +
+    geom_bar(aes(fill = species))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-06-10-keys/2020-06-10-keys-r-workshop.en_files/figure-html/barplot-stack-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;This creates a stacked bar chart. These are generally more difficult to read than side-by-side bars. We can separate the portions of the stacked bar that correspond to each island and put them side-by-side by using the &lt;code&gt;position&lt;/code&gt; argument for &lt;code&gt;geom_bar()&lt;/code&gt; and setting it to “dodge”.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = penguins, aes(x = island)) +
+    geom_bar(aes(fill = species), position = &amp;quot;dodge&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-06-10-keys/2020-06-10-keys-r-workshop.en_files/figure-html/barplot-dodge-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ggplot2-themes&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;strong&gt;&lt;code&gt;ggplot2&lt;/code&gt;&lt;/strong&gt; themes&lt;/h2&gt;
+&lt;p&gt;In addition to &lt;code&gt;theme_bw()&lt;/code&gt;, which changes the plot background to white, &lt;strong&gt;&lt;code&gt;ggplot2&lt;/code&gt;&lt;/strong&gt; comes with several other themes which can be useful to quickly change the look of your visualization. The complete list of themes is available at &lt;a href=&#34;http://docs.ggplot2.org/current/ggtheme.html&#34; class=&#34;uri&#34;&gt;http://docs.ggplot2.org/current/ggtheme.html&lt;/a&gt;. &lt;code&gt;theme_minimal()&lt;/code&gt; and &lt;code&gt;theme_light()&lt;/code&gt; are popular, and &lt;code&gt;theme_void()&lt;/code&gt; can be useful as a starting point to create a new hand-crafted theme.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://jrnold.github.io/ggthemes/reference/index.html&#34;&gt;ggthemes&lt;/a&gt; package provides a wide variety of options (including an Excel 2003 theme). The &lt;a href=&#34;https://www.ggplot2-exts.org&#34;&gt;&lt;strong&gt;&lt;code&gt;ggplot2&lt;/code&gt;&lt;/strong&gt; extensions website&lt;/a&gt; provides a list of packages that extend the capabilities of &lt;strong&gt;&lt;code&gt;ggplot2&lt;/code&gt;&lt;/strong&gt;, including additional themes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;customization&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Customization&lt;/h2&gt;
+&lt;p&gt;Take a look at the &lt;a href=&#34;https://www.rstudio.com/wp-content/uploads/2016/11/ggplot2-cheatsheet-2.1.pdf&#34;&gt;&lt;strong&gt;&lt;code&gt;ggplot2&lt;/code&gt;&lt;/strong&gt; cheat
+sheet&lt;/a&gt;, and think of ways you could improve the plot.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;exercise-5&#34;&gt;Exercise&lt;/h2&gt;
+&lt;p&gt;With all of this information in hand, please take another five minutes to either improve one of the plots generated in this exercise or create a beautiful graph of your own.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;See if you can make the bars white with black outline.&lt;/li&gt;
+&lt;li&gt;Try using a different color palette (see
+&lt;a href=&#34;http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/&#34; class=&#34;uri&#34;&gt;http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
     <item>
-      <title>Hello R Markdown</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
+      <title>gganimate: A Lesson with Avocados</title>
+      <link>/post/2020-05-25-gganimate/2020-05-25-gganimate/</link>
+      <pubDate>Mon, 25 May 2020 21:13:14 -0500</pubDate>
+      <guid>/post/2020-05-25-gganimate/2020-05-25-gganimate/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;R Markdown&lt;/h1&gt;
-&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You can embed an R code chunk like this:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(cars)
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-fit &amp;lt;- lm(dist ~ speed, data = cars)
-fit
-## 
-## Call:
-## lm(formula = dist ~ speed, data = cars)
-## 
-## Coefficients:
-## (Intercept)        speed  
-##     -17.579        3.932&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Animating your ggplots may sound daunting. However, you have to add a line or two extra of code and you have an animation! &lt;code&gt;gganimate&lt;/code&gt; makes animation quite accessible for users of ggplot.&lt;/p&gt;
+&lt;p&gt;A cheat sheet for what we’ll cover today:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Types of Transitions
+&lt;ul&gt;
+&lt;li&gt;transition_reveal() (good for mainly geom_line)&lt;/li&gt;
+&lt;li&gt;transition_states() (good for geom_point, geom_bar, geom_col, etc)
+&lt;ul&gt;
+&lt;li&gt;splits up plot data by a discrete variable and animates between the different states.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;transition_time() (geom_point)
+&lt;ul&gt;
+&lt;li&gt;Instead of transitioning over a discrete variable, the transition occurs over a continuous variable (Time)&lt;br /&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Some extras
+&lt;ul&gt;
+&lt;li&gt;shadow_mark()
+&lt;ul&gt;
+&lt;li&gt;This shadow lets you show the raw data behind the current frame. Both past and/or future raw data can be shown and styled as you want.&lt;br /&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;shadow_wake()
+&lt;ul&gt;
+&lt;li&gt;instead of leaving a more permanent mark, wake leaves a tail to show direction, but only reveals the past few states&lt;br /&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;view_follow(fixed_y = TRUE)
+&lt;ul&gt;
+&lt;li&gt;controls how your viewport changes as the transition occurs&lt;br /&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;anim_save()&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;It works much like &lt;code&gt;ggsave()&lt;/code&gt; from ggplot2 and automatically grabs the last rendered animation if you do not specify one directly.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;Let’s load back up our data from the previous lessons on R by Adriana Picoral (picoral.github.io/resbaz_intro_to_r/parti.html) and from Kathryn Busby on ggplot2. I’ll name the dataframe &lt;code&gt;avocado&lt;/code&gt; because I can’t remember what the other instructors named their data. We will also load our packages here.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+# install.packages(&amp;quot;gganimate&amp;quot;)
+library(gganimate)
+# install.packages(&amp;quot;scales&amp;quot;)
+library(scales)
+avocado &amp;lt;- read_csv(&amp;quot;avocado.csv&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Avocado data is originally from www.kaggle.com/neuromusic/avocado-prices/data and included in the link about to make downloading easier.&lt;/p&gt;
+&lt;p&gt;Let’s explore our data a little bit..&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;glimpse(avocado)
+summary(avocado)
+class(avocado$Date) #make sure `Date` is actually a date type 
+unique(avocado$region)# what type of regions are included here?&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You’ll notice that our region variable is kind of all over the place. Because I’ve reviewed this before, I know we need to separate out the US level, states, regions, and cities so our graphs are on the same level.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;avocado_us &amp;lt;- avocado %&amp;gt;% filter(region == &amp;quot;TotalUS&amp;quot;)
+states &amp;lt;- c(&amp;quot;California&amp;quot;)
+avocado_CA &amp;lt;- avocado %&amp;gt;% filter(region %in% states)
+regions &amp;lt;- c(&amp;quot;West&amp;quot;,&amp;quot;Southeast&amp;quot;,&amp;quot;SouthCentral&amp;quot;,&amp;quot;Plains&amp;quot;,&amp;quot;Northeast&amp;quot;,&amp;quot;Midsouth&amp;quot;,&amp;quot;GreatLakes&amp;quot;,&amp;quot;WestTexNewMexico&amp;quot;,&amp;quot;NorthernNewEngland&amp;quot;)
+avocado_region &amp;lt;- avocado %&amp;gt;% filter(region %in% regions)
+avocado_cities &amp;lt;- avocado %&amp;gt;% filter(!region %in% c(&amp;quot;TotalUS&amp;quot;, states, regions))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We’re finally ready to make some plots, and then build the animation into these plots.&lt;/p&gt;
+&lt;div id=&#34;transition_reveal&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;transition_reveal()&lt;/h2&gt;
+&lt;p&gt;This type of transition is the simplest and acts like a piece of paper is being removed from left to right over the top of the graph to slowly reveal the result. That’s how I think about it, at least. This assume that your x axis is also what is included inside your statement transition_reveal().&lt;/p&gt;
+&lt;p&gt;For this, let’s first build a static line plot that has date on the x-axis. Looking through the data, we could use &lt;code&gt;AveragePrice&lt;/code&gt; or &lt;code&gt;Total Volume&lt;/code&gt; on the y axis, and we could disaggregate by region, size of avocado, or type (organic versus conventional).&lt;/p&gt;
+&lt;p&gt;Let’s stick to the totalUS aggregation dataset we made (avocado_us) and look at the average price of conventional and organic avocados over time.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = avocado_us, 
+       mapping = aes(x = Date, y = AveragePrice, color = type)) +
+  geom_line()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If we feel good on time, we can make a few adjustments to the plot before animating it.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = avocado_us, 
+       mapping = aes(x = Date, y = AveragePrice, color = type)) +
+  geom_line() +
+  scale_y_continuous(labels = scales::dollar_format()) +  # format that y axis! 
+  scale_color_manual(values= c(&amp;quot;darkgreen&amp;quot;, &amp;quot;darkolivegreen3&amp;quot;)) +
+  theme_minimal() +
+  labs(title = &amp;quot;Average Price of US Avocados&amp;quot;,
+       caption = &amp;quot;Source: Kaggle&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This looks a lot better. I one what happened the summer of 2015! Now let’s animate this. The key to this animation is &lt;code&gt;transition_reveal()&lt;/code&gt;. Inside of the function, we can write out x axis variable. While it will take a few moments to render, you should see an animated plot in your plots pane.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = avocado_us, 
+       mapping = aes(x = Date, y = AveragePrice, color = type)) +
+  geom_line() +
+  scale_y_continuous(labels = scales::dollar_format()) +  # format that y axis! 
+  scale_color_manual(values= c(&amp;quot;darkgreen&amp;quot;, &amp;quot;darkolivegreen3&amp;quot;)) +
+  theme_minimal() +
+  labs(title = &amp;quot;Average Price of US Avocados&amp;quot;,
+       caption = &amp;quot;Source: Kaggle&amp;quot;) +
+  transition_reveal(Date)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let’s also save this, since each time we run the code it takes some time.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;anim_save(filename = &amp;quot;type_reveal.gif&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;type_reveal.gif&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;challenge&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Challenge&lt;/h3&gt;
+&lt;p&gt;Take a few minutes to try and plot the changes in total volume of organic avocados across time for the different regions of the USA.&lt;/p&gt;
+&lt;hr /&gt;
 &lt;/div&gt;
-&lt;div id=&#34;including-plots&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Including Plots&lt;/h1&gt;
-&lt;p&gt;You can also embed plots. See Figure &lt;a href=&#34;#fig:pie&#34;&gt;1&lt;/a&gt; for example:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;),
-  col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;),
-  init.angle = -50, border = NA
-)&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 1: A fancy pie chart.
-&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;transition_time&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;transition_time()&lt;/h2&gt;
+&lt;p&gt;Transition time creates new “layers” of the animation over a continous variable, usually time (i’ve never seen an exception to that). While this works best with geom_point, there’s many other options you can play around with.&lt;/p&gt;
+&lt;p&gt;Let’s use two continous variables to plot this. Let’s see how well price explains the volume sold of avocados for non-organic avocados (though, it’s been awhile since I took Econ101). Let’s do this for the different cities in the US, omitting states and regions.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;avocado_cities_filtered &amp;lt;- avocado_cities %&amp;gt;% 
+  filter(type == &amp;quot;conventional&amp;quot;,
+         Date &amp;gt; as.Date(&amp;quot;2018-01-01&amp;quot;))
+ggplot(data = avocado_cities_filtered,
+       mapping = aes(x = AveragePrice, y = `Total Volume`, color = region)) +
+  geom_point()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That legend is really going to get in the way. Let’s remove it and customize the circles before animating.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = avocado_cities_filtered,
+       mapping = aes(x = AveragePrice, y = `Total Volume`, color = region)) +
+  scale_y_continuous(labels = scales::comma_format()) +
+  scale_x_continuous(labels = scales::dollar_format()) +
+  geom_point(aes(size = `Total Volume`), alpha = .6) +  
+  theme_minimal() +
+  theme(legend.position = &amp;quot;none&amp;quot;) +
+  labs(title = &amp;quot;Avocados sold by price and city&amp;quot;) &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In practice, the animation is basically layering a bunch of plots on top of each other, as if they were facet_wraps. When I’m planning out an animation, I often use facet_wrap like you learned this morning to see the different layers before I “assemble” them.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = avocado_cities_filtered,
+       mapping = aes(x = AveragePrice, y = `Total Volume`, color = region)) +
+  scale_y_continuous(labels = scales::comma_format()) +
+  scale_x_continuous(labels = scales::dollar_format()) +
+  geom_point(aes(size = `Total Volume`), alpha = .6) +  
+  theme_minimal() +
+  theme(legend.position = &amp;quot;none&amp;quot;) +
+  labs(title = &amp;quot;Avocados sold by price and city&amp;quot;) +
+  facet_wrap(~Date)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now we can move on to animating this. transition_time() will replace the previous dot, making it hard to see any trends. Let’s add &lt;code&gt;shadow_wake&lt;/code&gt; so we can see the direction between points.&lt;/p&gt;
+&lt;p&gt;One really cool trick I like to employ is writing in the subtitle what point in time we’re currently animating. Before it didn’t really matter because the date was on the x axis, but not its hidden. For that, we need to add some &lt;code&gt;{}&lt;/code&gt; in the subtitle argument of labs.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = avocado_cities_filtered,
+       mapping = aes(x = AveragePrice, y = `Total Volume`, color = region)) +
+  scale_y_continuous(labels = scales::comma_format()) +
+  scale_x_continuous(labels = scales::dollar_format()) +
+  geom_point(aes(size = `Total Volume`), alpha = .6) +  
+  theme_minimal() +
+  theme(legend.position = &amp;quot;none&amp;quot;) +
+  labs(title = &amp;quot;Avocados sold by price and city&amp;quot;,
+       subtitle = &amp;quot;Date: {frame_time}&amp;quot;) +
+  transition_time(Date) +
+  shadow_wake(wake_length = 0.2)    &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let’s also save this, since each time we run the code it takes some time.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;anim_save(filename = &amp;quot;type_time.gif&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;type_time.gif&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;challenge-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Challenge&lt;/h3&gt;
+&lt;p&gt;Can you use transition_time to show how the price of organic avocados change over time for California?&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;transition_state&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;transition_state()&lt;/h2&gt;
+&lt;p&gt;Transition_state() creates a new animation layer across a categorical variable instead of over time.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;avocado_region_long &amp;lt;- avocado_region %&amp;gt;% 
+  pivot_longer(cols = c(`4046`,`4225`,`4770`),
+               names_to = &amp;quot;size&amp;quot;,
+               values_to = &amp;quot;volume&amp;quot;)
+ggplot(data = avocado_region_long,
+       mapping = aes(x = size, y = volume, color = size)) +
+  geom_boxplot() &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let’s customize this a little to make it look nicer.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = avocado_region_long,
+       mapping = aes(x = size, y = volume, color = size)) +
+  geom_boxplot() +
+  theme_classic() +
+  scale_y_continuous(labels = scales::comma_format()) +
+  labs(title = &amp;quot;Boxplot of volume sold by Avocado Size&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It isn’t particularly helpful that the previous view completely dissappears as in transition_time. Instead of using &lt;code&gt;shadow_wake()&lt;/code&gt;, let’s use &lt;code&gt;shadow_mark()&lt;/code&gt; to the animated plot to keep the past views visible.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = avocado_region_long,
+       mapping = aes(x = size, y = volume, color = size)) +
+  geom_boxplot() +
+  theme_classic() +
+  scale_y_continuous(labels = scales::comma_format()) +
+  labs(title = &amp;quot;Boxplot of volume sold by Avocado Size&amp;quot;) +
+  transition_states(size, state_length = 1, transition_length = 1) +
+  shadow_mark(alpha = 0.3, size = 0.5)    &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let’s also save this, since each time we run the code it takes some time.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;anim_save(filename = &amp;quot;type_state.gif&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;type_state.gif&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div id=&#34;challenge-answers&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Challenge answers:&lt;/h3&gt;
+&lt;p&gt;Challenge 1:
+Take a few minutes to try and plot the changes in total volume across time for the different regions of the USA.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = filter(avocado_region, type == &amp;quot;organic&amp;quot;), 
+       aes(x = Date, y = `Total Volume`, color = region)) +
+  geom_line() +
+  theme_minimal() +
+  labs(title = &amp;quot;Average Price of US Avocados&amp;quot;,
+       caption = &amp;quot;Source: Kaggle&amp;quot;,
+       subtitle = &amp;quot;Date: {frame_along}&amp;quot;) +
+  transition_reveal(Date)
+anim_save(&amp;quot;challenge_1.gif&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;challenge_1.gif&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Challenge 2: Can you use transition_time to show how the price of organic avocados change over time for California?&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data = filter(avocado_CA, type == &amp;quot;organic&amp;quot;),
+       mapping = aes(x = Date, y = AveragePrice)) +
+  scale_y_continuous(labels = scales::dollar_format()) +
+  geom_point(alpha = .6) +  
+  theme_minimal() +
+  theme(legend.position = &amp;quot;none&amp;quot;) +
+  labs(title = &amp;quot;The fluctuating price of organic avocados in California&amp;quot;,
+       subtitle = &amp;quot;Date: {frame_time}&amp;quot;) +
+  transition_time(Date) +
+  shadow_wake(wake_length = 0.2)    
+anim_save(&amp;quot;challenge_2.gif&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;challenge_2.gif&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>2020-01-15 Data Carpentry R for Social Science</title>
+      <link>/post/2020-01-15-dc-brynmawr/</link>
+      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-01-15-dc-brynmawr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2019-10-26 Software Carpentry R for Reproducible Scientific Analysis</title>
+      <link>/post/2019-10-26-swc-tucson/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/post/2019-10-26-swc-tucson/</guid>
+      <description></description>
     </item>
     
   </channel>

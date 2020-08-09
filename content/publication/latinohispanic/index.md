@@ -7,36 +7,23 @@ date: "2020-08-08T00:00:00Z"
 doi: ""
 featured: false
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
   focal_point: ""
   preview_only: false
 projects: []
 publication: '*Sociological Perspectives, 0*(0)'
-publication_short: ""
+publication_short: "“Latino” or “Hispanic”?: The Sociodemographic Correlates of Panethnic Label Preferences among US Latinos/Hispanics"
 publication_types:
 - "2"
 publishDate: "2020-08-08T00:00:00Z"
-slides: example
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 tags:
 - Source Themes
-title: An example journal article
+title: "Latino or Hispanic?: The Sociodemographic Correlates of Panethnic Label Preferences among US Latinos/Hispanics"
 url_code: ""
 url_dataset: "https://www.pewresearch.org/hispanic/dataset/2013-national-survey-of-latinos/"
-url_pdf: http://arxiv.org/pdf/1512.04133v1
+url_pdf: ""
 url_poster: ""
 url_project: ""
 url_slides: ""
 url_source: ""
 url_video: ""
 ---
-
-{{% alert note %}}
-Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-{{% /alert %}}
-
-{{% alert note %}}
-Click the *Slides* button above to demo Academic's Markdown slides feature.
-{{% /alert %}}
-
-Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).

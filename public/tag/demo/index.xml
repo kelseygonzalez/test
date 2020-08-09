@@ -5,18 +5,42 @@
     <link>/tag/demo/</link>
       <atom:link href="/tag/demo/index.xml" rel="self" type="application/rss+xml" />
     <description>Demo</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 14 Jul 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>/media/kelseygonzalez2020.png</url>
       <title>Demo</title>
       <link>/tag/demo/</link>
     </image>
     
     <item>
-      <title>External Project</title>
-      <link>/project/external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/external-project/</guid>
+      <title>Soc / Chs 303: Health &amp; Society</title>
+      <link>/course/soc303/soc303/</link>
+      <pubDate>Tue, 14 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/course/soc303/soc303/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2020-01-15 Data Carpentry R for Social Science</title>
+      <link>/post/2020-01-15-dc-brynmawr/</link>
+      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-01-15-dc-brynmawr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2019-10-26 Software Carpentry R for Reproducible Scientific Analysis</title>
+      <link>/post/2019-10-26-swc-tucson/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/post/2019-10-26-swc-tucson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Soc 101: Introduction to Sociology</title>
+      <link>/course/soc101/soc101/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>/course/soc101/soc101/</guid>
       <description></description>
     </item>
     
